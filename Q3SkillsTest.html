@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo_Metrovia (2).png">
+    <style>
+        body {
+            background-image: url(https://images.summitmedia-digital.com/spotph/images/2019/09/12/joyride-640-1568284652.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Montserrat Sans';
+            background-size: cover;
+            background-image: url(https://media.gettyimages.com/id/2158987140/video/bokeh-of-cars-and-traffic-lights-at-night.jpg?s=640x640&k=20&c=eEAZbd9l8ezmU-bzpesH6kKkXSqGbxa-Ez7XsA_gfWw=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            backdrop-filter: blur(3px);
+            min-height: 100vh;
+            padding-bottom: 40px;
+            font-family: 'Montserrat Sans';
+        }
+
+        .nav-link:hover {
+            color: #ffd37a !important;
+            transition: 0.3s;
+        }
+
+        .navbar-toggler {
+            display: none;
+        }
+
+        #pfp {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #regform {
+            background-color: rgb(211, 211, 211);
+            background-size: contain;
+
+            outline: 5px;
+            outline-offset: 5px;
+
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(22, 22, 22);
+            border-radius: 8px;
+        }
+
+        #form1 {
+            opacity: 0.95;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <a class="navbar-brand" href="#"><img src="Logo_Metrovia (2).png" alt="METROVIA"
+                                class="logo"></a>
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Registration Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Confirmation Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-warning text-dark" type="button">Search</button>
+
+            </form>
+            </div>
+            </div>
+        </nav>
+        </nav>
+
+        <div class="container col-lg-6">
+            <br>
+            <br>
+            <form class="form form-control" id="form1">
+                <h2 id="regform" class="bg-dark text-light" style="text-align: center;"><b>Registration Form</b></h2>
+                <br>
+                <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" width="125px"
+                    id="pfp">
+                <br>
+                <div class="bg-dark text-light col-lg-5 rounded" style="text-align: center;">
+                    <p>Choose File | No File Chosen</p>
+                </div>
+                <button type="button" onclick="Upload()" class="bg-dark text-light rounded">Upload File</button>
+                <br><br>
+
+                <details class="ontoggle">
+                    <br>
+                    <summary>Instructions:</summary>
+                    <p id="instructions"></p>
+                    <br>
+                </details>
+
+                <br>
+                <h3 id="profile" class="text-dark" style="text-align: center;"><b><u>Profile</u></b></h3>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter..." class="form-control w-75">
+                <br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="email" name="email" placeholder="Enter..." class="form-control w-75">
+
+                <br>
+                <label for="email">Age:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter..." class="form-control w-75">
+                <br>
+                <h3 id="credentials" class="text-dark" style="text-align: center;"><b><u>Credentials</u></b></h3>
+                <label for="number">Contact Number:</label>
+                <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+                <br>
+
+                <label for="number">Email:</label>
+                <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+                <br>
+
+                <label for="number">Enter Username:</label>
+                <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+                <br>
+
+                <label for="number">Password:</label>
+                <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+                <br>
+
+                <button type="button" onclick="Confirm()">Create Your Account</button>
+                <input type="reset" id="reset" name="reset" value="Clear">
+                <br><br>
+
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('instructions').innerHTML = "Fill out all the necessary fields below. Once finished, double-check your information, then click 'Create Your Account'. To reset, click 'Clear'.";
+
+            function Confirm() {
+                alert("Your account is now complete.");
+            }
+
+            function Upload() {
+                alert("Your file has been uploaded.");
+            }
+        </script>
+    </center>
+</body>
+
+</html>
